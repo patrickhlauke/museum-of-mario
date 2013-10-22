@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title></title>
+
+    	<script src="edge_includes/jquery-1.7.1.min.js"></script>
+
+    	<script>
+			
+    	    $(document).ready( function(event){
+
+				loadedCallback();	
+				
+    	    });
+   
+    	    
+    	    function loadedCallback( event ) {
+    	        setupDefaultView();
+    	    }
+			var defaultHTML = '<div>'+
+											'<h1>READY!</h1>'+
+											'<button id="addAnimation">Show Animation</button><br/>'+
+										'</div>';	
+										
+			var animationHTML = '<div id="animationContainer">'+
+												'<style>'+
+													'.edgeLoad-EDGE-1672177555 { visibility:hidden; }'+
+												'</style>'+
+												'<div id="Stage" class="EDGE-1672177555">'+
+												'<script type="text/javascript" charset="utf-8" src="Screen%2001-2_edgePreload.js" />'+
+										'</div>';
+    	    
+    	    function setupDefaultView() {
+    	        $(window).unbind( "animationReady" );
+    	        $("#contentHost").empty();
+    	        $("#contentHost").append(defaultHTML);
+				$("#addAnimation").click( setupMarioAnimationView );
+    	    }
+    	    
+    	    function setupMarioAnimationView() {
+    	        setupAnimationView( animationHTML ); 
+    	    }
+    	    
+    	    
+    	    function setupAnimationView( template ) { 
+    	    
+    	        $("#contentHost").find('#animationContainer').remove();
+    	        window.AdobeEdge = undefined;
+    	        AdobeEdge = undefined;
+    	        
+                var html = template;
+    	        $("#contentHost").append( html );
+    	        
+    	        //detect if edge is loaded yet
+    	        var edgeDetectionFunction = function() {
+        	        
+                    if ( AdobeEdge && AdobeEdge.compositions != undefined) {
+                        //put a delay here
+                        var hasComposition = false;
+                        
+                        if ( AdobeEdge.compositions ) {
+                            //loop to see if the composition is actually loaded
+                            for ( var key in AdobeEdge.compositionDefns ) {
+                                hasComposition = true;
+                                break;
+                            }
+                        }
+                        
+                        if ( hasComposition ) {
+                            setTimeout( function(){ $(window).trigger( "animationReady" ); }, 100 );
+                            return;
+            	        }
+                    }
+                    else if ( AdobeEdge ) {
+                        window.onDocLoaded();
+                    }
+                    setTimeout( edgeDetectionFunction, 100 );
+    	        }
+    	        edgeDetectionFunction();
+    	    }
+    	
+    	</script>
+        
+        
+    </head>
+
+    <body>
+    
+        
+        <div id="contentHost" style="height:500px"></div>
+        
+    </body>
+    
+
+</html>

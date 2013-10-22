@@ -1,0 +1,205 @@
+# Blender MTL File: 'Source.blend'
+# Material Count: 20
+
+newmtl 25_cent
+Ns 3.921569
+Ka 0.000000 0.000000 0.000000
+Kd 0.376320 0.376320 0.376320
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd 25c.jpg
+map_Ka 25c.jpg
+
+newmtl DK_bezel
+Ns 3.921569
+Ka 0.000000 0.000000 0.000000
+Kd 0.376448 0.376448 0.376448
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd DK_bezel.png
+
+newmtl DK_blue
+Ns 23.529412
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.356416 0.514496
+Ks 0.360000 0.360000 0.360000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl DK_button_black
+Ns 35.294118
+Ka 0.000000 0.000000 0.000000
+Kd 0.045184 0.045184 0.045184
+Ks 0.585000 0.585000 0.585000
+Ni 1.000000
+d 1.000000
+illum 2
+map_refl Map__11_Raytrace.tga
+
+newmtl DK_button_blue
+Ns 35.294118
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.218368 0.386496
+Ks 0.585000 0.585000 0.585000
+Ni 1.000000
+d 1.000000
+illum 2
+map_refl Map__11_Raytrace.tga
+
+newmtl DK_button_orange
+Ns 35.294118
+Ka 0.000000 0.000000 0.000000
+Kd 0.582272 0.333824 0.110400
+Ks 0.585000 0.585000 0.585000
+Ni 1.000000
+d 1.000000
+illum 2
+map_refl Map__11_Raytrace.tga
+
+newmtl DK_controls
+Ns 23.529412
+Ka 0.000000 0.000000 0.000000
+Kd 0.376320 0.376320 0.376320
+Ks 0.360000 0.360000 0.360000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd DK_controls.jpg
+map_Ka DK_controls.jpg
+
+newmtl DK_insert_coin
+Ns 3.921569
+Ka 0.000000 0.000000 0.000000
+Kd 0.376320 0.376320 0.376320
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd DK_insert_coin.jpg
+map_Ka DK_insert_coin.jpg
+
+newmtl DK_instructions
+Ns 35.294118
+Ka 0.000000 0.000000 0.000000
+Kd 0.278592 0.032640 0.067776
+Ks 0.585000 0.585000 0.585000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd DK_instructions.jpg
+map_Ka DK_instructions.jpg
+
+newmtl DK_marquee
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.512000 0.512000 0.512000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd DK_marquee.jpg
+map_Ka DK_marquee.jpg
+
+newmtl DK_screen
+Ns 3.921569
+Ka 0.000000 0.000000 0.000000
+Kd 0.376448 0.376448 0.376448
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd DK_screen.jpg
+map_Ka DK_screen.jpg
+
+newmtl DK_side_art
+Ns 23.529412
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.356416 0.514496
+Ks 0.360000 0.360000 0.360000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd DK_sideart.jpg
+map_Ka DK_sideart.jpg
+
+newmtl DK_white
+Ns 23.529412
+Ka 0.000000 0.000000 0.000000
+Kd 0.592320 0.592320 0.592320
+Ks 0.360000 0.360000 0.360000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl black
+Ns 15.686275
+Ka 0.000000 0.000000 0.000000
+Kd 0.075264 0.075264 0.075264
+Ks 0.360000 0.360000 0.360000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl black_matte
+Ns 3.921569
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl black_metal
+Ns 27.450980
+Ka 0.000000 0.000000 0.000000
+Kd 0.062720 0.062720 0.062720
+Ks 0.540000 0.540000 0.540000
+Ni 1.000000
+d 1.000000
+illum 2
+map_d mtl_bmp.jpg
+
+newmtl chrome
+Ns 49.019608
+Ka 0.000000 0.000000 0.000000
+Kd 0.148096 0.148096 0.148096
+Ks 0.540000 0.540000 0.540000
+Ni 1.000000
+d 1.000000
+illum 2
+map_refl Map__11_Raytrace.tga
+
+newmtl glass
+Ns 64.705882
+Ka 0.000000 0.000000 0.000000
+Kd 0.045184 0.047680 0.067776
+Ks 0.720000 0.720000 0.720000
+Ni 1.000000
+d 0.050000
+illum 2
+map_refl Map__11_Raytrace.tga
+
+newmtl speaker_mesh
+Ns 23.529412
+Ka 0.000000 0.000000 0.000000
+Kd 0.100416 0.100416 0.100416
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_d spkr_mesh.jpg
+
+newmtl steel
+Ns 3.921569
+Ka 0.000000 0.000000 0.000000
+Kd 0.087872 0.087872 0.087872
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_refl Map__11_Raytrace.tga

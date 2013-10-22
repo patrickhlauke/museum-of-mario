@@ -1,0 +1,43 @@
+.DS_Store
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+npm-debug.log
+forever/
+
+# Node
+node_modules
+
+# SASS
+.sass-cache
+
+# Build
+master.css
+secret.js
+js/tmpls.js
+js/load.vendor.js
+js/load.site.js
+*.gz
+
+# Featured Tweets
+featured-tweets.json
+
+# Built JSON
+json/*
+!json/index.htm
+
+# FileMerge Noise
+*.orig
+
+# Node Forever
+forever
