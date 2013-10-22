@@ -1,3 +1,15 @@
+/* Super Mario Brothers 2 font recreated by Patrick H. Lauke / splintered.co.uk */
+@font-face {
+	font-family: 'super_mario_brothers_2regular';
+	src: url('../fonts/8bit-era/super-mario-bros-2/super_mario_brothers_2.eot');
+	src: url('../fonts/8bit-era/super-mario-bros-2/super_mario_brothers_2.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/8bit-era/super-mario-bros-2/super_mario_brothers_2.woff') format('woff'),
+		 url('../fonts/8bit-era/super-mario-bros-2/super_mario_brothers_2.ttf') format('truetype'),
+		 url('../fonts/8bit-era/super-mario-bros-2/super_mario_brothers_2.svg#super_mario_brothers_2regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 .fixed{
 	position: fixed;
 	top:0;
@@ -175,6 +187,7 @@
 				display:none;/* Set initial state. */
 				//display:block;//Debug
 				.player-bio-modal__inner{
+					font-family:'super_mario_brothers_2regular';
 					background: url(../images/8bit-era/super-mario-bros-2/frame.png) top center no-repeat;
 					background-size:100%;
 					position: relative;
@@ -209,7 +222,7 @@
 						display: none;
 						.title{
 							text-align:center;
-							$fontSize:28px;
+							$fontSize:32px; /* font needs multiples of 8 */
 							font-size:$fontSize;
 							$paddingTop:100px;
 							$paddingBottom:70px;
@@ -245,7 +258,7 @@
 							.player-bio-text{
 								float:right;
 								width:70%;
-								$fontSize:18px;
+								$fontSize:16px; /* font needs multiples of 8 */
 								font-size:$fontSize;
 								@include breakpoint(sister-bear){/* < 770 */
 									font-size:$fontSize * $sisterBearScale;
